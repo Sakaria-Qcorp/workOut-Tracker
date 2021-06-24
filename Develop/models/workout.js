@@ -9,12 +9,16 @@ const WorkoutSchema = new Schema({
     exercises : [{
         type: {
             type : "string",
+            trim : true,
+            required: "enter the type of exercise"
 
         },
         
         name: {
 
             type : "string",
+            trim : true,
+            required: "enter the name of the exercise"
 
         },
 
@@ -41,7 +45,7 @@ const WorkoutSchema = new Schema({
     
 
 
-    }]
+    }]});
 
 
 
