@@ -7,7 +7,7 @@ router.get("api/workouts", (req,res) =>{
     .then(data =>{
         res.json(data);
     }).catch(error =>{
-        
+        res.status(400).json(error);
     })
 
 
