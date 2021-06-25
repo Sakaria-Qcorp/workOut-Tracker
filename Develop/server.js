@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(require("./route/apiRoutes"));
+
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
     useNewUrlParser: true,
@@ -22,6 +22,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
     useFindAndModify: false
 
 });
+
+app.use(require("./route/apiRoutes"));
 
 app.listen(PORT,() =>{
     console.log(`The server is listening on ${PORT}`);
