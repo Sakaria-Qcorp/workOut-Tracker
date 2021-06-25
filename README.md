@@ -33,7 +33,6 @@
   ## Tests
   npm test
 
-  ## Link
   
   
 
@@ -44,7 +43,7 @@
   
   ## Any additional information
   To See the application in action click the link below.
-  [Application](https://github.com/SakariaQcorp)
+  [Application](https://workout-tracker-app21.herokuapp.com/)
   
 
   
