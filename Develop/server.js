@@ -2,6 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const workOut = require("./models/workout");
+const path = require("path");
 
 const PORT = process.env.PORT || 3004;
 
@@ -80,6 +81,22 @@ app.get("/api/workouts/range", (req, res)=> {
     .catch(err => {
         res.status(400).json(err);
     });
+});
+
+//html Routes
+ // Render stats.html
+ app.get('/stats', function (req, res) {
+    res.sendFile(path.join(__dirname, './public/stats.html'));
+});
+
+// Render exercise.html
+app.get('/exercise', function (req, res) {
+    res.sendFile(path.join(__dirname, './public/exercise.html'));
+});
+
+// Render index.html
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 app.listen(PORT,() =>{
