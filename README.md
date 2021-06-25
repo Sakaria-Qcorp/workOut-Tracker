@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [dependencies](#dependencies)
-  - [Contribution](#contribution)
+  - [Screenshot](#ScreenShot)
   - [Test](#tests)
   
   - [Questions](#Question)
@@ -32,8 +32,9 @@
   
   ## Tests
   npm test
-  ## License
-  None
+
+  ## Link
+  
   
 
   ## Contact
@@ -42,7 +43,8 @@
   * GitHub: [SakariaQcorp](https://github.com/SakariaQcorp)
   
   ## Any additional information
-  This app could be adjusted to fit an athletes needs.
+  To See the application in action click the link below.
+  [Application](https://github.com/SakariaQcorp)
   
 
   
