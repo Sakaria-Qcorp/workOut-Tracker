@@ -84,17 +84,17 @@ app.get("/api/workouts/range", (req, res)=> {
 });
 
 //html Routes
- // Render stats.html
+ //Creating a route for stats.html
  app.get('/stats', function (req, res) {
     res.sendFile(path.join(__dirname, './public/stats.html'));
 });
 
-// Render exercise.html
+//Creating a route for exercise.html
 app.get('/exercise', function (req, res) {
     res.sendFile(path.join(__dirname, './public/exercise.html'));
 });
 
-// Render index.html
+//Creating a route for index.html
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
