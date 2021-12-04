@@ -1,4 +1,4 @@
-# Project Name: WorkOut-Tracker
+#  WorkOut-Tracker
  
   ## Description
   This app allows us to keep track of our work outs and update the work outs.
